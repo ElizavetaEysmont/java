@@ -17,12 +17,12 @@ public class Calculator {
    {
        return a/b;
    }
-   public double divide (double a, long b)
+   public double divide (long a, long b)
    {
        return (double) a/b;
    }
 
-   public double divide (double a, int b)
+   public double divide (int a, int b)
    {
        return (double) (a/b);
    }
