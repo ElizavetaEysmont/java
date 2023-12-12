@@ -19,12 +19,12 @@ public class Calculator {
    }
    public double divide (double a, long b)
    {
-       return a/b;
+       return (double) a/b;
    }
 
    public double divide (double a, int b)
    {
-       return a/b;
+       return (double) (a/b);
    }
 
    public double multiply(double a, double b)
