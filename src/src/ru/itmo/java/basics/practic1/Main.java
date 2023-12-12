@@ -11,6 +11,7 @@ public class Main {
             System.out.println("Java");
         }
 
+
         {
             byte a = 46;
             byte b = 10;
@@ -34,8 +35,8 @@ public class Main {
         {
             short number = 10500;
             byte a = 10;
-            int result1 = number/a;
-            int result = result1/a;
+            double result1 = (double) number / a;
+            double result = result1 / a;
             System.out.println(result);
         }
 
@@ -43,9 +44,10 @@ public class Main {
             float a = 3.6f;
             float b = 4.1f;
             float c = 5.9f;
-            float result = a*b*c;
+            float result = a * b * c;
             System.out.println(result);
         }
+
         {
 
             System.out.println("Введите целое число:");
@@ -65,7 +67,7 @@ public class Main {
             int b = scanner.nextInt();
             if (b % 2 != 0) {
                 System.out.println("Нечетное");
-            } else if (b<= 100) {
+            } else if (b <= 100) {
                 System.out.println("Чётное");
             } else {
                 System.out.println("Выход за пределы диапазона");
@@ -73,3 +75,4 @@ public class Main {
         }
     }
 }
+
