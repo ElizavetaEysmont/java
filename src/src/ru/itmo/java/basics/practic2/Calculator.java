@@ -17,22 +17,15 @@ public class Calculator {
    {
        return a/b;
    }
-   public double divide(double a, long b)
+   public double divide (double a, long b)
    {
        return a/b;
    }
-    public double divide(long a, double b)
-    {
-        return a/b;
-    }
-   public double divide(double a, int b)
+
+   public double divide (double a, int b)
    {
        return a/b;
    }
-    public double divide(int a, double b)
-    {
-        return a/b;
-    }
 
    public double multiply(double a, double b)
    {
