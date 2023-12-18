@@ -15,5 +15,4 @@ class JavaProgram {
         Study javaStudy = new Study("Изучение Java - это просто!");
         System.out.println(javaStudy.printCourse());
     }
-
 }

@@ -6,30 +6,34 @@ public class Home {
     private int floor;
     private int yearBuilt;
     private String name;
-    public Home (int floor, int yearBuilt, String name){
+
+    public Home(int floor, int yearBuilt, String name) {
         this.floor = floor;
         this.yearBuilt = yearBuilt;
         this.name = name;
     }
 
-    public int printFloor(){
+    public int printFloor() {
         return this.floor;
     }
-    public int printYearBuilt(){
+
+    public int printYearBuilt() {
         return this.yearBuilt;
     }
-    public String printName(){
+
+    public String printName() {
         return this.name;
     }
-    public int yearsSinceBuilt(){
+
+    public int yearsSinceBuilt() {
         int currentYear = LocalDate.now().getYear();
         return currentYear - yearBuilt;
     }
 
 
-    public static void main(String[] args){
-        Home home1 = new Home(14,2001,"Home1");
-        Home home2 = new Home(25,2015,"Home2");
+    public static void main(String[] args) {
+        Home home1 = new Home(14, 2001, "Home1");
+        Home home2 = new Home(25, 2015, "Home2");
         System.out.println(home1.printFloor());
         System.out.println(home1.printYearBuilt());
         System.out.println(home1.printName());
