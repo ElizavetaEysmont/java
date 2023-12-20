@@ -2,6 +2,10 @@ package src.ru.itmo.java.basics.practic4;
 
 public class program2 {
     public static void main(String[] args){
+        printOds();
+    }
+
+    public static void printOds(){
         for (int i=1;i<=100;i++){
             if (i % 3 == 0){
                 System.out.println("Делится на 3:"+i);

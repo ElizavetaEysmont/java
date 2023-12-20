@@ -4,6 +4,9 @@ import java.util.Arrays;
 
 public class program6 {
     public static void main(String[] args){
+        array();
+    }
+    public static void array(){
         int [] ints = new int[5];
         ints[0]=4;
         ints[1]=60;

@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class program3 {
     public static void main(String[] args){
+        sum();
+
+    }
+    public static void sum(){
         System.out.println("Ведите первое число:");
         System.out.println("Введите второе число:");
         System.out.println("Введите третье число:");

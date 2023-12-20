@@ -4,7 +4,10 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class program8 {
-    public static void main(String[] args) {
+    public static void main (String[] args){
+        arrayLenght();
+    }
+    public static void arrayLenght() {
         Scanner scanner = new Scanner(System.in);{
             Scanner input = new Scanner(System.in);
             System.out.println("Array lenght: ");

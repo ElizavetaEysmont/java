@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class program4 {
     public static void main(String[] args){
+        print3numbers();
+    }
+    public static void print3numbers(){
         System.out.println("Ведите первое число:");
         System.out.println("Введите второе число:");
         System.out.println("Введите третье число:");

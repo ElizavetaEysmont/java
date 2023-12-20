@@ -4,6 +4,9 @@ import java.util.Arrays;
 
 public class program9 {
     public static void main(String[] args){
+        replacement();
+    }
+    public static void replacement(){
         int [] ints = new int[4];
         ints[0] = 5;
         ints[1]=6;

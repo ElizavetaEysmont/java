@@ -16,10 +16,13 @@ public class program10 {
         }
         return 0;
     }
-    public static void main (String[] args){
+    public static void Unigue (){
         int[] array = {1,2,3,1,2,4};
         int result = findFirstUnique(array);
         System.out.println(result);
+    }
+    public static void main(String[] args){
+        Unigue();
     }
 
 }
