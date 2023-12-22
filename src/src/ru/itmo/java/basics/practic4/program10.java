@@ -17,14 +17,14 @@ public class program10 {
         return 0;
     }
 
-    public static void Unigue() {
-        int[] array = {1, 2, 3, 1, 2, 4};
-        int result = findFirstUnique(array);
+    public static void unigue() {
+        int[] ints = {1, 2, 3, 1, 2, 4};
+        int result = findFirstUnique(ints);
         System.out.println(result);
     }
 
     public static void main(String[] args) {
-        Unigue();
+        unigue();
     }
 
 }

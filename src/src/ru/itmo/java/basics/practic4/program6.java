@@ -4,23 +4,22 @@ import java.util.Arrays;
 
 public class program6 {
     public static void main(String[] args) {
-        array();
+        int[] array = {4, 60, 1, 17, 3};
+        boolean containsOneOrThree = containsOneOrThree(array);
+        if (containsOneOrThree) {
+            System.out.println("Массив содержит число 1  или 3.");
+        } else {
+            System.out.println("Массив не содержит число 1 или 3.");
+        }
     }
 
-    public static void array() {
-        int[] ints = new int[5];
-        ints[0] = 4;
-        ints[1] = 60;
-        ints[2] = 1;
-        ints[3] = 17;
-        ints[4] = 3;
-        System.out.println(Arrays.toString(ints));
-        Arrays.sort(ints);
-        System.out.println(Arrays.toString(ints));
-        int i = Arrays.binarySearch(ints, 1);
-        int y = Arrays.binarySearch(ints, 3);
-        System.out.println(i);
-        System.out.println(y);
-
+    public static boolean containsOneOrThree(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == 1 || array[i] == 3) {
+                return true;
+            }
+        }
+        return false;
     }
+
 }
