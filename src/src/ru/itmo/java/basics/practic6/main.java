@@ -2,8 +2,8 @@ package src.ru.itmo.java.basics.practic6;
 
 public class main{
     public static void main (String[] args){
-        human client = new client("Артём", "Иванов","Тинькофф");
-        human bankEmployee = new bankEmployee("Элина", "Радионова","Сбербанк");
+        Human client = new Client("Артём", "Иванов","Тинькофф");
+        Human bankEmployee = new BankEmployee("Элина", "Радионова","Сбербанк");
 
         client.print();
         bankEmployee.print();
@@ -12,10 +12,10 @@ public class main{
 
 }
 
-abstract class human{
+abstract class Human{
     private String name;
     private String surname;
-    public human(String name, String surname){
+    public Human(String name, String surname){
         this.name = name;
         this.surname = surname;
     }
@@ -27,9 +27,9 @@ abstract class human{
     }
     public abstract void print();
 }
-class client extends human{
+class Client extends Human{
     private String nameBank;
-    public client (String name, String surname, String nameBank){
+    public Client (String name, String surname, String nameBank){
     super(name, surname);
     this.nameBank = nameBank;
     }
@@ -39,9 +39,9 @@ class client extends human{
         System.out.println("Name:" + getName() + " Surname:" + getSurname() + " Bank:" + nameBank);
     }
 }
-class bankEmployee extends human{
+class BankEmployee extends Human{
     private String nameBank;
-    public bankEmployee(String name, String surname, String nameBank){
+    public BankEmployee(String name, String surname, String nameBank){
         super(name, surname);
         this.nameBank = nameBank;
     }

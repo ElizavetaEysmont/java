@@ -1,44 +1,46 @@
 package src.ru.itmo.java.basics.practic6;
+
 public class main1 {
-    public static void main (String[] args){
-        car truck = new truck(2000,"Volvo",'B',80,12,10000);
+    public static void main(String[] args) {
+        Truck truck = new Truck(2000, "Volvo", 'B', 80, 12, 10000);
         truck.outPut();
+        truck.newWheels(14);
     }
 }
-
-class car {
+class Car {
     public int weight;
     public String model;
     public char color;
     public float speed;
 
-
-    public void outPut() {
-        System.out.println("Вес " + model + " составляет " + weight + "кг.");
+    public void outPut () {
+        System.out.println("Вес " + model + " составляет " + weight + " кг.");
         System.out.println("Цвет машины - " + color + " и её скорость - " + speed);
     }
 
-    public car(int w, String m, char c, float s) {
+    public Car (int w, String m, char c, float s) {
         weight = w;
         model = m;
         color = c;
         speed = s;
     }
 
-    public car() {}
+    public Car () {}
 }
 
-class truck extends car {
-    private int wheels;
-    private int newWeight;
-    public truck(int w, String m, char c, float s, int wheels, int newWeight) {
+class Truck extends Car {
+    private int numberOfWheels;
+    private int maxWeight;
+
+    public Truck(int w, String m, char c, float s, int wheels, int maxWeight) {
         super(w, m, c, s);
-        this.wheels = wheels;
-        this.newWeight = newWeight;
+        this.numberOfWheels = wheels;
+        this.maxWeight = maxWeight;
     }
 
-    public void newWheels (int newWheels){
-        this.wheels = newWheels;
-        System.out.println("Новое колличество колёс: " + this.wheels);
+    public void newWheels(int newNumberOfWheels) {
+        this.numberOfWheels = newNumberOfWheels;
+        System.out.println("Новое количество колес установлено: " + this.numberOfWheels);
     }
 }
+

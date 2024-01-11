@@ -1,14 +1,14 @@
 package src.ru.itmo.java.basics.practic6;
 
-public class mainClass {
+class MainClass {
     protected int number;
 
-    public mainClass(int number) {
+    public MainClass(int number) {
         this.number = number;
     }
 }
 
-class SubClass extends mainClass {
+class SubClass extends MainClass {
     public SubClass(int number) {
         super(number);
     }
